@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap bg-gray-100 text-gray-900 tracking-wide">
+  <div class="flex flex-wrap bg-gray-200 text-gray-900 tracking-wide">
     <div class="w-full px-4">
       <nav
         class="relative flex flex-wrap items-center justify-between px-2 py-3"
@@ -11,7 +11,7 @@
             class="w-full relative flex justify-between sm:w-auto sm:static sm:block sm:justify-start"
           >
             <a
-              class="text-lg font-bold leading-relaxed inline-block whitespace-no-wrap uppercase font-display"
+              class="text-xl font-bold leading-relaxed inline-block whitespace-no-wrap uppercase font-display"
               href="#"
             >
               UNITE
@@ -19,22 +19,22 @@
           </div>
           <ul class="flex flex-col sm:flex-row list-none ml-auto">
             <li class="nav-item">
-              <a class="pr-6 py-2 flex items-center hover:opacity-50" href="#">
-                <home-icon height="20" width="20" />
+              <a class="pr-6 py-2 flex items-center" href="#">
+                <home-icon height="20" width="20" class="active" />
               </a>
             </li>
             <li class="nav-item">
-              <a class="pr-6 py-2 flex items-center hover:opacity-50" href="#">
+              <a class="pr-6 py-2 flex items-center" href="#">
                 <inbox-icon height="20" width="20" />
               </a>
             </li>
             <li class="nav-item">
-              <a class="pr-6 py-2 flex items-center hover:opacity-50" href="#">
+              <a class="pr-6 py-2 flex items-center" href="#">
                 <calendar-icon height="20" width="20" />
               </a>
             </li>
             <li class="nav-item">
-              <a class="py-2 flex items-center hover:opacity-50" href="#">
+              <a class="py-2 flex items-center" href="#">
                 <settings-icon height="20" width="20" />
               </a>
             </li>
@@ -65,6 +65,19 @@ export default {
 </script>
 
 <style>
+.nav-item svg {
+  fill: black;
+  stroke: #000000;
+  stroke-opacity: 1;
+  fill-opacity: 0;
+}
+.nav-item a:hover svg,
+.nav-item svg.active {
+  fill-opacity: 1;
+}
+.nav-item a {
+  transition: 0.4s ease !important;
+}
 svg:not(:root) {
   overflow: visible !important;
 }
