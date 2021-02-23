@@ -3,7 +3,7 @@
     <TopBar />
 
     <div
-      class="container w-full grid grid-flow-col grid-cols-12 mx-auto items-start gap-10 p-10"
+      class="container w-full grid grid-flow-col grid-cols-12 mx-auto items-start gap-10 py-10"
     >
       <Content />
 

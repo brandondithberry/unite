@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap bg-gray-900 bg-opacity-90 text-gray-100 tracking-wide shadow-md sticky top-0" style="backdrop-filter: blur(5px);">
+  <div class="flex flex-wrap col-spanfull bg-gray-900 bg-opacity-90 text-gray-100 tracking-wide shadow-md sticky top-0" style="backdrop-filter: blur(5px);">
     <div class="w-full px-4">
       <nav
         class="relative flex flex-wrap items-center justify-between px-2 py-3"
@@ -17,7 +17,7 @@
               <logo-light width="150" />
             </a>
           </div>
-          <ul class="flex flex-row list-none ">
+          <ul class="flex flex-row list-none">
             <li class="nav-item">
               <a class="pr-7 py-2 flex items-center" href="#">
                 <home-icon height="20" width="20" class="active" />

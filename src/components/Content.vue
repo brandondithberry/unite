@@ -1,5 +1,5 @@
 <template>
-  <div class="grid xl:col-span-8 col-span-full gap-10">
+  <div class="grid col-span-full xl:col-span-8  gap-10">
     <Create />
 
     <Posts />
