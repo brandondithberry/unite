@@ -1,29 +1,5 @@
 <template>
-  <div class="grid col-span-4 gap-6">
-    <div class="grid rounded-md p-8 bg-blue-100 leading-loose shadow-md">
-      <h4 class="font-display uppercase text-md">Messages</h4>
-      <ul class="text-sm">
-        <li
-          v-for="message in messages.slice(0, 4)"
-          :key="message.id"
-          class="border-2 border-blue-300 p-3 mt-5 rounded-md flex justify-between"
-        >
-          <p>
-            <span v-if="message.body.length<50">{{ message.body }}</span>
-            <span v-else>{{ message.body.substring(0,50) + "..."}}</span><br />
-            <b
-              >{{ message.sender }} | {{ message.date }} -
-              {{ message.time }}</b
-            >
-          </p>
-          <options-icon
-            width="15"
-            height="15"
-            class="opacity-30 hover:opacity-100 cursor-pointer"
-          ></options-icon>
-        </li>
-      </ul>
-    </div>
+  <div class="grid col-span-full lg:col-span-4 gap-6">
     <div class="grid rounded-md p-8 bg-yellow-100 leading-loose shadow-md">
       <h4 class="font-display uppercase text-md">Prayer Reminders</h4>
       <ul class="text-sm">
@@ -40,6 +16,30 @@
             height="15"
             class="opacity-30 hover:opacity-100 cursor-pointer"
           ></check-icon>
+        </li>
+      </ul>
+    </div>
+    <div class="grid rounded-md p-8 bg-blue-100 leading-loose shadow-md">
+      <h4 class="font-display uppercase text-md">Messages</h4>
+      <ul class="text-sm">
+        <li
+          v-for="message in messages.slice(0, 4)"
+          :key="message.id"
+          class="border-2 border-blue-300 p-3 mt-5 rounded-md flex justify-between"
+        >
+          <p>
+            <span v-if="message.body.length < 50">{{ message.body }}</span>
+            <span v-else>{{ message.body.substring(0, 50) + "..." }}</span
+            ><br />
+            <b
+              >{{ message.sender }} | {{ message.date }} - {{ message.time }}</b
+            >
+          </p>
+          <options-icon
+            width="15"
+            height="15"
+            class="opacity-30 hover:opacity-100 cursor-pointer"
+          ></options-icon>
         </li>
       </ul>
     </div>
@@ -64,8 +64,8 @@
 </template>
 
 <script>
-import CheckIcon from "@/components/icons/CheckIcon.vue";
-import OptionsIcon from "@/components/icons/OptionsIcon.vue";
+import CheckIcon from "@/components/graphics/CheckIcon.vue";
+import OptionsIcon from "@/components/graphics/OptionsIcon.vue";
 
 export default {
   data: function () {

@@ -1,16 +1,16 @@
 <template>
-  <div class="rounded-md p-8 bg-gray-900 text-white shadow-md">
+  <div class="rounded-md p-8 bg-gray-300 shadow-md">
     <h2 class="font-bold pb-3 font-display uppercase">Publish An Update</h2>
     <textarea
-      class="block border-2 rounded-md p-3 text-black text-sm w-full box-border"
+      class="block rounded-md p-3 text-black text-sm w-full box-border shadow-lg"
     ></textarea>
     <button
-      class="p-3 mt-5 rounded-md bg-blue-500 text-white hover:bg-blue-400 shadow-xl mr-5"
+      class="p-3 mt-5 rounded-md bg-blue-600 text-white hover:bg-blue-500 shadow-lg mr-5 transition"
     >
       Publish
     </button>
     <button
-      class="p-3 mt-5 rounded-md bg-gray-500 text-white hover:bg-gray-400 shadow-xl mr-5"
+      class="p-3 mt-5 rounded-md bg-gray-600 text-white hover:bg-gray-500 shadow-lg mr-5 transition"
     >
       <calendar-icon
         height="15"
@@ -21,7 +21,7 @@
       New Event
     </button>
     <button
-      class="p-3 rounded-md bg-gray-500 text-white hover:bg-gray-400 shadow-xl"
+      class="p-3 rounded-md bg-gray-600 text-white hover:bg-gray-500 shadow-lg transition"
     >
       <calendar-icon
         height="15"
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import CalendarIcon from "@/components/icons/CalendarIcon.vue";
+import CalendarIcon from "@/components/graphics/CalendarIcon.vue";
 
 export default {
   components: {
