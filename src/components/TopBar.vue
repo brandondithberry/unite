@@ -131,11 +131,11 @@ export default {
   fill: black;
   stroke: #000000;
   stroke-opacity: 1;
-  fill-opacity: 0;
+  fill-opacity: 1;
 }
 .nav-item a:hover svg,
 .nav-item svg.active {
-  fill-opacity: 1;
+  fill-opacity: 0;
 }
 .nav-item a {
   transition: 0.4s ease !important;
