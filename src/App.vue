@@ -9,6 +9,8 @@
 
       <Sidebar />
     </div>
+
+    <BottomBar />
   </div>
 </template>
 
@@ -16,6 +18,7 @@
 import TopBar from "./components/TopBar.vue";
 import Content from "./components/Content.vue";
 import Sidebar from "./components/Sidebar.vue";
+import BottomBar from "./components/BottomBar.vue";
 import "@/assets/css/tailwind.css";
 
 export default {
@@ -24,6 +27,7 @@ export default {
     TopBar,
     Content,
     Sidebar,
+    BottomBar,
   },
 };
 </script>
