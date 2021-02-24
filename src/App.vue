@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style>
-html, body {
+html {
   overflow-x: hidden !important;
 }
 </style>
