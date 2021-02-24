@@ -10,27 +10,27 @@
         <ul class="flex flex-row list-none col-span-full m-auto">
           <li class="nav-item">
             <a class="mr-10 py-2 flex items-center" href="#">
-              <home-icon height="30" width="30" class="active" />
+              <home-icon height="20" width="20" class="active" />
             </a>
           </li>
           <li class="nav-item">
             <a class="mr-10 py-2 flex items-center" href="#">
-              <prayer-icon height="30" width="30" />
+              <prayer-icon height="20" width="20" />
             </a>
           </li>
           <li class="nav-item">
             <a class="mr-10 py-2 flex items-center" href="#">
-              <inbox-icon height="30" width="30" />
+              <inbox-icon height="20" width="20" />
             </a>
           </li>
           <li class="nav-item">
             <a class="mr-10 py-2 flex items-center" href="#">
-              <calendar-icon height="30" width="30" />
+              <calendar-icon height="20" width="20" />
             </a>
           </li>
           <li class="nav-item">
             <a class="py-2 flex items-center" href="https://my.uniteco.app">
-              <settings-icon height="30" width="30" />
+              <settings-icon height="20" width="20" />
             </a>
           </li>
         </ul>
