@@ -9,22 +9,22 @@
       >
         <ul class="flex flex-row list-none col-span-full m-auto">
           <li class="nav-item">
-            <a class="pr-7 py-2 flex items-center" href="#">
+            <a class="pr-10 py-2 flex items-center" href="#">
               <home-icon height="50" width="50" class="active" />
             </a>
           </li>
           <li class="nav-item">
-            <a class="pr-7 py-2 flex items-center" href="#">
+            <a class="pr-10 py-2 flex items-center" href="#">
               <prayer-icon height="50" width="50" />
             </a>
           </li>
           <li class="nav-item">
-            <a class="pr-7 py-2 flex items-center" href="#">
+            <a class="pr-10 py-2 flex items-center" href="#">
               <inbox-icon height="50" width="50" />
             </a>
           </li>
           <li class="nav-item">
-            <a class="pr-7 py-2 flex items-center" href="#">
+            <a class="pr-10 py-2 flex items-center" href="#">
               <calendar-icon height="50" width="50" />
             </a>
           </li>
